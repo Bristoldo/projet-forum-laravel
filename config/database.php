@@ -56,7 +56,7 @@ return [
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
             'prefix_indexes' => true,
-            'strict' => true,
+            'strict' => false,          //(true => false) modification ici a parce que lorsque je generais les fausses donnees, j'ai recu une erreur du genre "Warning: 1265 Data truncated for column 'status_user' at row 1 (SQL: insert into `users` (`nom_user`, `prenom_user`, `photo_profile`, `status_user`, `email_user`, `email_verified_at`, `remember_token`, `groupe_id`, `updated_at`, `created_at`) values (Era, Walter, DDxVGnJFNGHl6sNBNUpu, enline, vito71@example.org, 2023-02-26 08:01:08, gkT9XSRuNa,2, 2023-02-26 08:01:08, 2023-02-26 08:01:08))"
             'engine' => null,
             'options' => extension_loaded('pdo_mysql') ? array_filter([
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
