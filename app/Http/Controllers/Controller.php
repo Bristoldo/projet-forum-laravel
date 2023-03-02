@@ -16,7 +16,13 @@ class Controller extends BaseController
 
         $users = User::all();
 
-        return view('welcome', compact('users'));
+        return view('index', compact('users'));
+
+    }
+
+    public function login(){
+
+        return view('login');
 
     }
 

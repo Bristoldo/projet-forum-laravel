@@ -14,3 +14,4 @@ use App\Http\Controllers\Controller;
 */
 
 Route::get('/', [Controller::class, 'index']);
+Route::get('/login', [Controller::class, 'login']);
